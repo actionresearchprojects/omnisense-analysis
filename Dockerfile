@@ -17,4 +17,4 @@ COPY --chown=user ./omnisense_analysis.ipynb .
 
 EXPOSE 7860
 
-CMD ["voila", "--port=7860", "--no-browser", "--Voila.ip=0.0.0.0", "omnisense_analysis.ipynb"]
+CMD ["voila", "--port=7860", "--no-browser", "--Voila.ip=0.0.0.0", "--show_tracebacks=True", "omnisense_analysis.ipynb"]
